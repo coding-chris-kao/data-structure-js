@@ -1,7 +1,8 @@
-import Stack from '../main/stack.js'
+import Stack from '@/data-structures/stack.js'
 
-describe('Basic stack method all work', () => {
+describe('Basic Stack method all work', () => {
   const myStack = new Stack()
+
   test('Stack.size() works', () => {
     expect(myStack.size()).toBe(0)
   })
@@ -22,13 +23,13 @@ describe('Basic stack method all work', () => {
   })
 
   test('Stack.print works', () => {
-    let output = myStack.print()
-    expect(output).toBe('1, 5')
+    let item = myStack.print()
+    expect(item).toBe('1, 5')
   })
 
   test('Stack.pop() works', () => {
-    let value = myStack.pop()
-    expect(value).toBe(5)
+    let item = myStack.pop()
+    expect(item).toBe(5)
   })
 
   test('Stack.clear() works', () => {
